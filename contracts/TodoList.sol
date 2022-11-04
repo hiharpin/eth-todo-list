@@ -12,7 +12,7 @@ contract TodoList {
 
  mapping(uint => Task) public tasks;
 
-  constructor() {
+  constructor() public {
     createTask("Check out dappuniversity.com");
   }
 
@@ -20,4 +20,5 @@ contract TodoList {
     taskCount ++;
     tasks[taskCount] = Task(taskCount, _content, false);
   }
+  
 }
