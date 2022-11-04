@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity ^0.8.17;
+pragma solidity >=0.8.17;
 
 contract TodoList {
   uint public taskCount = 0;
@@ -12,7 +12,7 @@ contract TodoList {
 
  mapping(uint => Task) public tasks;
 
-  constructor() public {
+  constructor() {
     createTask("Check out dappuniversity.com");
   }
 
